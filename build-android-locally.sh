@@ -6,7 +6,8 @@ echo "🧹 Cleaning previous local APKs..."
 rm -f ./build-*.apk
 
 echo "📦 Building custom development client (Android)..."
-eas build --platform android --profile development --local
+DOTENV_CONFIG_PATH=.env.production eas build --platform android --profile development --local
+
 
 echo "🔍 Searching for latest .apk file..."
 APK_PATH=$(ls -t build-*.apk | head -n 1)

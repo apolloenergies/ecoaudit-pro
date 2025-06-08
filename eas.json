@@ -11,6 +11,9 @@
       "ios": {
         "simulator": true,
         "buildConfiguration": "Debug"
+      },
+      "env": {
+        "APP_ENV": "development"
       }
     },
     "preview": {
@@ -22,6 +25,9 @@
       },
       "ios": {
         "buildConfiguration": "Release"
+      },
+      "env": {
+        "APP_ENV": "production"
       }
     }
   },
