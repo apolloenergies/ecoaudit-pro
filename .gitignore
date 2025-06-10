@@ -31,9 +31,12 @@ yarn-error.*
 *.pem
 
 # local env files
-.env*.local
+.env.*
 
 # typescript
 *.tsbuildinfo
 
-app-example
+# Ignore local EAS build APKs
+/build-*.apk
+/build-*.tar.gz
+/Payload/
