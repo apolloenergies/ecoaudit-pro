@@ -12,11 +12,6 @@ export default ({ config }) => {
     icon: './assets/icon.png',
     userInterfaceStyle: 'light',
     newArchEnabled: true,
-    splash: {
-      image: './assets/splash-icon.png',
-      resizeMode: 'contain',
-      backgroundColor: '#ffffff'
-    },
     ios: {
       supportsTablet: true,
       bundleIdentifier: 'com.apolloenergies.ecoaudit'
@@ -30,7 +25,6 @@ export default ({ config }) => {
       package: 'com.apolloenergies.ecoaudit'
     },
     web: {
-      favicon: './assets/favicon.png'
     },
     extra: {
       eas: {

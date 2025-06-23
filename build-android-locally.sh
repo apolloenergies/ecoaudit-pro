@@ -27,6 +27,3 @@ else
   echo "❌ No emulator/device detected. Please start one first."
   exit 1
 fi
-
-echo "🚀 Starting Metro bundler with dev client support..."
-npx expo start --dev-client

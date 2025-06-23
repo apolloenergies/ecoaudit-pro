@@ -4,8 +4,10 @@
   "main": "index.ts",
   "scripts": {
     "start": "expo start --dev-client",
-    "android:dev": "sh ./build-android-locally.sh",
-    "ios:dev": "sh ./build-ios-locally.sh",
+    "android:dev": "sh ./build-android-locally.sh && npx expo start --dev-client",
+    "ios:dev": "sh ./build-ios-locally.sh && npx expo start --dev-client",
+    "android:build:dev": "sh ./build-android-locally.sh",
+    "ios:build:dev": "sh ./build-ios-locally.sh",
     "web": "expo start --web"
   },
   "dependencies": {
@@ -14,12 +16,17 @@
     "@react-navigation/stack": "^7.3.3",
     "expo": "~53.0.10",
     "expo-dev-client": "~5.2.0",
+    "expo-font": "~13.3.1",
+    "expo-splash-screen": "~0.30.9",
     "expo-status-bar": "~2.2.3",
     "react": "19.0.0",
     "react-native": "0.79.3",
+    "react-native-gesture-handler": "~2.24.0",
+    "react-native-linear-gradient": "^2.8.3",
+    "react-native-reanimated": "~3.17.4",
     "react-native-safe-area-context": "5.4.0",
     "react-native-screens": "~4.11.1",
-    "react-native-gesture-handler": "~2.24.0"
+    "react-native-status-bar-height": "^2.6.0"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",

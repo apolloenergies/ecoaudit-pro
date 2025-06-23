@@ -2,7 +2,7 @@ import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { useAuth } from 'contexts/AuthContext';
-import { HomeScreen, LoginScreen } from 'screens';
+import AuthStack from './AuthStack';
 
 export type RootStackParamList = {
   Home: undefined;
@@ -16,13 +16,7 @@ const AppNavigator = () => {
 
   return (
     <NavigationContainer>
-      <Stack.Navigator>
-        {user ? (
-          <Stack.Screen name="Home" component={HomeScreen} />
-        ) : (
-          <Stack.Screen name="Login" component={LoginScreen} />
-        )}
-      </Stack.Navigator>
+      <AuthStack />
     </NavigationContainer>
   );
 };

@@ -42,6 +42,3 @@ BUNDLE_ID=$(/usr/libexec/PlistBuddy -c "Print CFBundleIdentifier" "$APP_PATH/Inf
 echo "🚀 Launching app with bundle ID: $BUNDLE_ID"
 xcrun simctl launch booted "$BUNDLE_ID"
 
-# Step 5: Start Metro bundler
-echo "📡 Starting Metro with dev client..."
-npx expo start --dev-client

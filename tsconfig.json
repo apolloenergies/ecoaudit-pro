@@ -7,10 +7,12 @@
       "components/*": ["components/*"],
       "screens/*": ["screens/*"],
       "contexts/*": ["contexts/*"],
-      "hooks/*": ["hooks/*"],
+      "hooks": ["hooks/index.ts"],
       "utils/*": ["utils/*"],
       "navigation/*": ["navigation/*"],
-      "services/*": ["services/*"]
-    }
+      "services/*": ["services/*"],
+      "config": ["config/index.ts"],
+      "theme": ["theme/index.ts"] 
+    },
   }
 }
