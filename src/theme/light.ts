@@ -1,4 +1,4 @@
-import { ColorPalette } from "./types";
+import { ColorPalette } from './types';
 
 export const colors: ColorPalette = {
   neutral: {
@@ -11,7 +11,7 @@ export const colors: ColorPalette = {
     300: '#D3DBE4',
     200: '#E1E5EA',
     100: '#EDF0F2',
-    50:  '#F6F7F9',
+    50: '#F6F7F9',
   },
   primary: {
     intense: '#0F25E0',

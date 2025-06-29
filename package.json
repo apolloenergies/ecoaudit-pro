@@ -10,10 +10,12 @@
     "ios:build:dev": "sh ./build-ios-locally.sh",
     "web": "expo start --web",
     "prepare": "husky install",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "lint": "eslint src --ext .js,.jsx,.ts,.tsx --ignore-pattern \"**/*.config.js\"",
+    "lint:fix": "eslint src --ext .js,.jsx,.ts,.tsx --ignore-pattern \"**/*.config.js\" --fix",
     "format": "prettier --write ."
   },
   "dependencies": {
+    "@gorhom/bottom-sheet": "^5.1.6",
     "@react-navigation/drawer": "^7.4.1",
     "@react-navigation/native": "^7.1.10",
     "@react-navigation/stack": "^7.3.3",
@@ -46,5 +48,13 @@
     "prettier": "^3.6.2",
     "typescript": "~5.8.3"
   },
-  "private": true
+  "private": true,
+  "husky": {
+  "hooks": {
+    "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": "eslint --cache --fix"
+  }
 }

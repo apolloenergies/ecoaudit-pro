@@ -1,4 +1,3 @@
-// eslint.config.cjs
 const { FlatCompat } = require('@eslint/eslintrc');
 
 const compat = new FlatCompat({
@@ -7,11 +6,10 @@ const compat = new FlatCompat({
 });
 
 module.exports = [
-  // 1) Extend Expo’s RN + TS rules and Prettier
   ...compat.extends('universe/native', 'plugin:prettier/recommended'),
 
   {
-    ignores: ['node_modules/**', 'dist/**', '*.config.js', '*.config.cjs'],
+    ignores: ['node_modules/**', 'dist/**', '*.config.js', '**/*.config.cjs, build/**'],
 
     plugins: {
       node: require('eslint-plugin-node'),

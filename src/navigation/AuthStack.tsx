@@ -1,11 +1,12 @@
-import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
+import React from 'react';
+
+import HeaderAuth from 'screens/auth/components/headerAuth';
 import LoginScreen from 'screens/auth/login';
 import SignupStep1Screen from 'screens/auth/signup-step1';
 import SignupStep2Screen from 'screens/auth/signup-step2';
 import SignupStep3Screen from 'screens/auth/signup-step3';
 import SignupStep4Screen from 'screens/auth/signup-step4';
-import HeaderAuth from 'screens/auth/components/headerAuth'
 
 export type AuthStackParamList = {
   Login: undefined;
@@ -31,7 +32,7 @@ export default function AuthStack() {
   return (
     <Stack.Navigator
       screenOptions={{
-        header: () => <HeaderAuth/>
+        header: () => <HeaderAuth />,
       }}
     >
       <Stack.Screen name="Login" component={LoginScreen} />

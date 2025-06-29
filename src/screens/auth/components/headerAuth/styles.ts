@@ -1,18 +1,17 @@
-import { useLogoPosition } from 'hooks';
 import { StyleSheet, Platform, StatusBar } from 'react-native';
+
+import { useLogoPosition } from 'hooks';
 import { THEME_TYPES } from 'theme';
 
 const createHeaderAuthStyles = (theme: THEME_TYPES.ColorPalette) => {
-
   return StyleSheet.create({
     safeArea: {
-        backgroundColor: 'transparent'
+      backgroundColor: 'transparent',
     },
     image: {
-        position: 'absolute',
-    }
+      position: 'absolute',
+    },
   });
-}
-  
-  
-  export default createHeaderAuthStyles;
+};
+
+export default createHeaderAuthStyles;

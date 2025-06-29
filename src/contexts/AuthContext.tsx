@@ -17,12 +17,12 @@ export const AuthProvider = ({ children }: PropsWithChildren) => {
   const login = (username: string) => {
     setUser(username);
     setIsLoggedIn(true);
-  }
+  };
   const logout = () => {
     setUser(null);
     setIsLoggedIn(false);
-  }
-  
+  };
+
   const setIsloggedIn = (value: boolean) => setIsLoggedIn(value);
 
   return (

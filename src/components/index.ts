@@ -1,5 +1,5 @@
-import InputLabel from "./inputLabel";
-import Button from './button'
+import Button from './button';
+import InputLabel from './inputLabel';
 import InputPin from './inputPin';
 
-export {InputLabel, Button, InputPin};
+export { InputLabel, Button, InputPin };
