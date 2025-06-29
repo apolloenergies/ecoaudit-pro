@@ -8,7 +8,10 @@
     "ios:dev": "sh ./build-ios-locally.sh && npx expo start --dev-client",
     "android:build:dev": "sh ./build-android-locally.sh",
     "ios:build:dev": "sh ./build-ios-locally.sh",
-    "web": "expo start --web"
+    "web": "expo start --web",
+    "prepare": "husky install",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "format": "prettier --write ."
   },
   "dependencies": {
     "@react-navigation/drawer": "^7.4.1",
@@ -31,7 +34,16 @@
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
+    "@eslint/eslintrc": "^3.3.1",
     "@types/react": "~19.0.10",
+    "eslint": "^9.30.0",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-config-universe": "^15.0.3",
+    "eslint-plugin-prettier": "^5.5.1",
+    "eslint-plugin-react-native": "^5.0.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.2",
+    "prettier": "^3.6.2",
     "typescript": "~5.8.3"
   },
   "private": true
