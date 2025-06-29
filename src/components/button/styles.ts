@@ -10,6 +10,8 @@ const createButtonStyles = (theme: THEME_TYPES.ColorPalette) =>
         paddingHorizontal: 12,
         gap: 8,
         borderRadius: 6,
+        alignItems: 'center',
+        width: '100%',
     },
     primaryContainer: {
       backgroundColor: COLORS.cleanBlue,

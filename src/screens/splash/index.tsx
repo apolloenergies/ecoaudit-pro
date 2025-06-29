@@ -28,7 +28,6 @@ export default function AnimatedSplash({
   const phase = useSharedValue(0);
 
   const { top: FINAL_TOP, left: FINAL_LEFT, size: FINAL_SIZE } = useLogoPosition();
-  console.log(FINAL_LEFT, FINAL_SIZE, FINAL_TOP, 'splash', Platform.OS === 'android' ? 'android': 'ios')
 
   const INITIAL_SIZE = 189;
   const DROP_DISTANCE = 30;
