@@ -1,17 +1,15 @@
-import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
-import { useAuth } from 'contexts/AuthContext';
-import AuthStack from './AuthStack';
+import React from 'react';
 
+import { useAuth } from 'contexts/AuthContext';
+
+import AuthStack from './AuthStack';
+import MainDrawer from './MainDrawerNavigator';
 
 const AppNavigator = () => {
-  const { user } = useAuth();
+  const { isLoggedIn } = useAuth();
 
-  return (
-    <NavigationContainer>
-      <AuthStack />
-    </NavigationContainer>
-  );
+  return <NavigationContainer>{isLoggedIn ? <MainDrawer /> : <AuthStack />}</NavigationContainer>;
 };
 
 export default AppNavigator;

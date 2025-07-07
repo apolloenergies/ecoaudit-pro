@@ -1,7 +1,12 @@
 export const cleanBlue = '#3B49B6';
-export const white = '#FFF'
+export const white = '#FFF';
 export const success = '#2BAC62';
 export const dangerLight = '#E1E5EA';
 export const secondary = '#E1E5EA';
 export const naked = '#E1E5EA';
 export const black = '#000';
+export const authGradient1 = 'rgba(59,73,182,0.0)';
+export const authGradient2 = 'rgba(59,73,182,0.0)';
+export const authGradient3 = 'rgba(59,73,182,0.36)';
+export const homeGradient1 = 'rgba(59,73,182,0.00)';
+export const homeGradient2 = 'rgba(59,73,182,0.36)';

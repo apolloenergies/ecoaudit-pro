@@ -1,0 +1,31 @@
+{
+  "eslint.format.enable": true,
+
+  "editor.formatOnSave": true,
+
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+
+  "[javascript]": {
+    "editor.defaultFormatter": "microsoft.vscode-eslint",
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "microsoft.vscode-eslint",
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "microsoft.vscode-eslint",
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "microsoft.vscode-eslint",
+  },
+
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+
+  "eslint.run": "onSave"
+}

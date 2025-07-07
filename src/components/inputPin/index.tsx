@@ -1,18 +1,14 @@
-import { useThemedStyles } from 'hooks';
 import React from 'react';
-import {
-  View,
-  Text,
-  StyleProp,
-  ViewStyle,
-  TextStyle,
-} from 'react-native';
+import { View, Text, StyleProp, ViewStyle, TextStyle } from 'react-native';
 import {
   CodeField,
   Cursor,
   useBlurOnFulfill,
   useClearByFocusCell,
 } from 'react-native-confirmation-code-field';
+
+import { useThemedStyles } from 'hooks';
+
 import createInputPinStyles from './styles';
 
 export interface InputPinProps {
@@ -21,7 +17,7 @@ export interface InputPinProps {
   cellCount?: number;
   containerStyle?: StyleProp<ViewStyle>;
   cellStyle?: StyleProp<ViewStyle>;
-  focusCellStyle?: StyleProp<ViewStyle>
+  focusCellStyle?: StyleProp<ViewStyle>;
   textStyle?: StyleProp<TextStyle>;
 }
 
@@ -42,7 +38,7 @@ export default function InputPin({
     setValue: onChange,
   });
 
-  const styles = useThemedStyles(createInputPinStyles)
+  const styles = useThemedStyles(createInputPinStyles);
 
   return (
     <CodeField
@@ -74,5 +70,4 @@ export default function InputPin({
       )}
     />
   );
-};
-
+}

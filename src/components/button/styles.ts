@@ -1,4 +1,5 @@
 import { StyleSheet } from 'react-native';
+
 import { THEME_TYPES, TYPOGRAPHY, COLORS } from 'theme';
 
 const PRESSED_BUTTON_BACKGROUND_COLOR = 'rgba(0, 0, 0, 0.12)';
@@ -6,12 +7,14 @@ const PRESSED_BUTTON_BACKGROUND_COLOR = 'rgba(0, 0, 0, 0.12)';
 const createButtonStyles = (theme: THEME_TYPES.ColorPalette) =>
   StyleSheet.create({
     container: {
-        paddingVertical: 8,
-        paddingHorizontal: 12,
-        gap: 8,
-        borderRadius: 6,
-        alignItems: 'center',
-        width: '100%',
+      paddingVertical: 8,
+      paddingHorizontal: 12,
+      gap: 8,
+      borderRadius: 6,
+      alignItems: 'center',
+      width: '100%',
+      flexDirection: 'row',
+      justifyContent: 'center',
     },
     primaryContainer: {
       backgroundColor: COLORS.cleanBlue,
@@ -54,7 +57,7 @@ const createButtonStyles = (theme: THEME_TYPES.ColorPalette) =>
     },
     pressed: {
       backgroundColor: PRESSED_BUTTON_BACKGROUND_COLOR,
-    }
+    },
   });
-  
-  export default createButtonStyles;
+
+export default createButtonStyles;

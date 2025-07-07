@@ -1,10 +1,14 @@
+import { BottomSheetModalProvider } from '@gorhom/bottom-sheet';
+import { useFonts } from 'expo-font';
+import * as SplashScreen from 'expo-splash-screen';
 import React, { useState, useCallback } from 'react';
+import { StyleSheet } from 'react-native';
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
+
 import { AuthProvider } from 'contexts';
 import { AppNavigator } from 'navigation';
-import * as SplashScreen from 'expo-splash-screen';
-import AnimatedSplash from 'screens/splash'
-import { useFonts } from 'expo-font';
-import {SafeAreaProvider} from 'react-native-safe-area-context'
+import AnimatedSplash from 'screens/splash';
 
 export default function App() {
   const [showSplash, setShowSplash] = useState(true);
@@ -17,20 +21,27 @@ export default function App() {
     SplashScreen.hideAsync();
   }, []);
 
-   const readyToAnimateSplash = fontsLoaded;
+  const readyToAnimateSplash = fontsLoaded;
 
   return (
-    <SafeAreaProvider>
-      {
-        showSplash && readyToAnimateSplash ? 
-          <AnimatedSplash onFinish={handleSplashFinish}  /> : 
-          <>
+    <GestureHandlerRootView style={styles.container}>
+      <BottomSheetModalProvider>
+        <SafeAreaProvider>
+          {showSplash && readyToAnimateSplash ? (
+            <AnimatedSplash onFinish={handleSplashFinish} />
+          ) : (
             <AuthProvider>
               <AppNavigator />
             </AuthProvider>
-          </>
-      }
-    </SafeAreaProvider>
+          )}
+        </SafeAreaProvider>
+      </BottomSheetModalProvider>
+    </GestureHandlerRootView>
   );
 }
-  
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+});

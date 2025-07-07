@@ -1,3 +1,3 @@
-import LOGO_AE from '../../../../assets/images/logo_AE.png'
+import LOGO_AE from '../../../../assets/images/logo_AE.png';
 
-export { LOGO_AE } 
+export { LOGO_AE };

@@ -1,3 +1,3 @@
-import BACKGROUND_CREATE_ACCOUNT_SUCCESS from '../../../../assets/images/background-create-account-success.png'
+import BACKGROUND_CREATE_ACCOUNT_SUCCESS from '../../../../assets/images/background-create-account-success.png';
 
-export { BACKGROUND_CREATE_ACCOUNT_SUCCESS } 
+export { BACKGROUND_CREATE_ACCOUNT_SUCCESS };

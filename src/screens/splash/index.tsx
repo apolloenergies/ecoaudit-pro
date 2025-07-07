@@ -9,10 +9,11 @@ import Animated, {
   interpolate,
   Extrapolation,
 } from 'react-native-reanimated';
+
 import { IMAGES } from 'config';
-import { COLORS } from 'theme';
 import { useLogoPosition } from 'hooks';
 import AuthBackground from 'screens/auth/components/authBackground';
+import { COLORS } from 'theme';
 
 const { height: SCREEN_HEIGHT, width: SCREEN_WIDTH } = Dimensions.get('screen');
 
@@ -21,10 +22,7 @@ type AnimatedSplashProps = {
   delay?: number;
 };
 
-export default function AnimatedSplash({
-  onFinish,
-  delay = 800,
-}: AnimatedSplashProps) {
+export default function AnimatedSplash({ onFinish, delay = 800 }: AnimatedSplashProps) {
   const phase = useSharedValue(0);
 
   const { top: FINAL_TOP, left: FINAL_LEFT, size: FINAL_SIZE } = useLogoPosition();
@@ -33,33 +31,33 @@ export default function AnimatedSplash({
   const DROP_DISTANCE = 30;
 
   useEffect(() => {
-    if(FINAL_TOP === 0) return;
+    if (FINAL_TOP === 0) return;
     let mounted = true;
     const timer = setTimeout(() => {
       phase.value = withTiming(
         0.5,
         { duration: 600, easing: Easing.out(Easing.cubic) },
-        finished1 => {
+        (finished1) => {
           if (finished1 && mounted) {
             phase.value = withTiming(
               1,
               { duration: 450, easing: Easing.out(Easing.cubic) },
-              finished2 => {
+              (finished2) => {
                 if (finished2 && mounted) {
                   phase.value = withTiming(
                     2,
                     { duration: 550, easing: Easing.out(Easing.cubic) },
-                    finished3 => {
+                    (finished3) => {
                       if (finished3 && mounted) {
                         runOnJS(onFinish)();
                       }
-                    }
+                    },
                   );
                 }
-              }
+              },
             );
           }
-        }
+        },
       );
     }, delay);
 
@@ -70,22 +68,12 @@ export default function AnimatedSplash({
   }, [delay, onFinish, phase, FINAL_TOP]);
 
   const splashStyle = useAnimatedStyle(() => {
-    const translateY = interpolate(
-      phase.value,
-      [0, 0.5],
-      [0, SCREEN_HEIGHT],
-      Extrapolation.CLAMP
-    );
+    const translateY = interpolate(phase.value, [0, 0.5], [0, SCREEN_HEIGHT], Extrapolation.CLAMP);
     return { transform: [{ translateY }] };
   });
 
   const logoStyle = useAnimatedStyle(() => {
-    const dropY = interpolate(
-      phase.value,
-      [0.5, 1],
-      [-DROP_DISTANCE, 0],
-      Extrapolation.CLAMP
-    );
+    const dropY = interpolate(phase.value, [0.5, 1], [-DROP_DISTANCE, 0], Extrapolation.CLAMP);
     const t = interpolate(phase.value, [1, 2], [0, 1], Extrapolation.CLAMP);
 
     const startTop = (SCREEN_HEIGHT - INITIAL_SIZE) / 2 + dropY;
