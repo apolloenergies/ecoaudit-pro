@@ -13,6 +13,8 @@ const createButtonStyles = (theme: THEME_TYPES.ColorPalette) =>
       borderRadius: 6,
       alignItems: 'center',
       width: '100%',
+      flexDirection: 'row',
+      justifyContent: 'center',
     },
     primaryContainer: {
       backgroundColor: COLORS.cleanBlue,

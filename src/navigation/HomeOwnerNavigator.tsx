@@ -1,6 +1,7 @@
 import { createStackNavigator } from '@react-navigation/stack';
 import React from 'react';
 
+import HomeOwnerHeader from 'screens/homeowner/components/homeOwnerHeader';
 import HomeScreen from 'screens/homeowner/home';
 
 export type HomeOwnerStackParamList = {
@@ -9,11 +10,11 @@ export type HomeOwnerStackParamList = {
 
 const Stack = createStackNavigator<HomeOwnerStackParamList>();
 
-export default function HomeNavigator() {
+export default function HomeOwnerNavigator() {
   return (
     <Stack.Navigator
       screenOptions={{
-        headerShown: false,
+        header: (props) => <HomeOwnerHeader {...props} />,
       }}
     >
       <Stack.Screen name="Home" component={HomeScreen} />

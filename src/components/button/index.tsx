@@ -38,11 +38,26 @@ export default function InputLabel({
   const styles = useThemedStyles(createButtonStyles);
   return (
     <Pressable
-      style={[styles.container, styles[`${variant}Container`], style]}
+      style={[
+        styles.container,
+        styles[`${variant}Container`],
+        disabled && styles.nakedContainer,
+        style,
+      ]}
       onPress={onPress}
       disabled={disabled}
     >
-      <Text style={[styles[`${variant}TextColor`], styles.text, textStyle]}>{title}</Text>
+      <Text
+        style={[
+          styles[`${variant}TextColor`],
+          styles.text,
+          disabled && styles.nakedTextColor,
+          textStyle,
+        ]}
+      >
+        {title}
+      </Text>
+      {rightIcon}
     </Pressable>
   );
 }

@@ -18,6 +18,7 @@ module.exports = [
     },
 
     rules: {
+      'node/handle-callback-err': 'off',
       'prettier/prettier': [
         'error',
         {
@@ -26,7 +27,6 @@ module.exports = [
         },
       ],
       'react-native/no-inline-styles': 'warn',
-      'node/handle-callback-err': 'off',
     },
 
     settings: {
