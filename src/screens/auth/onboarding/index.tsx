@@ -1,13 +1,11 @@
-import { Ionicons } from '@expo/vector-icons';
 import { StackScreenProps } from '@react-navigation/stack';
 import React, { useState } from 'react';
-import { View, Text, TouchableOpacity, ScrollView, ImageBackground } from 'react-native';
+import { View, Text, ScrollView, ImageBackground } from 'react-native';
 
 import { Button, Icon, CircularButton } from 'components';
 import { IMAGES } from 'config';
 import { useThemedStyles } from 'hooks';
 import { AuthStackParamList } from 'navigation/AuthStack';
-import { COLORS } from 'theme';
 
 import createOnboardingStyles from './styles';
 

@@ -5,7 +5,6 @@ import {
   Inter_600SemiBold,
   Inter_700Bold,
 } from '@expo-google-fonts/inter';
-import { BottomSheetModalProvider } from '@gorhom/bottom-sheet';
 import * as SplashScreen from 'expo-splash-screen';
 import React, { useState, useCallback } from 'react';
 import { StyleSheet } from 'react-native';
@@ -35,19 +34,17 @@ export default function App() {
 
   return (
     <GestureHandlerRootView style={styles.container}>
-      <BottomSheetModalProvider>
-        <SafeAreaProvider>
-          {showSplash && readyToAnimateSplash ? (
-            <AnimatedSplash onFinish={handleSplashFinish} />
-          ) : (
-            <AuthProvider>
-              <ThemeProvider>
-                <AppNavigator />
-              </ThemeProvider>
-            </AuthProvider>
-          )}
-        </SafeAreaProvider>
-      </BottomSheetModalProvider>
+      <SafeAreaProvider>
+        {showSplash && readyToAnimateSplash ? (
+          <AnimatedSplash onFinish={handleSplashFinish} />
+        ) : (
+          <AuthProvider>
+            <ThemeProvider>
+              <AppNavigator />
+            </ThemeProvider>
+          </AuthProvider>
+        )}
+      </SafeAreaProvider>
     </GestureHandlerRootView>
   );
 }
