@@ -31,6 +31,9 @@ export type TypographyVariant =
   | 'h4'
   | 'h3'
   | 'h2'
-  | 'h1';
+  | 'h1'
+  | 'bold'
+  | 'semibold'
+  | 'medium';
 
 export type Typography = Record<TypographyVariant, TextStyle>;

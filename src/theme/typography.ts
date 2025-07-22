@@ -14,10 +14,9 @@ export const TYPOGRAPHY: Typography = {
     fontWeight: 400,
   },
   'base-medium': {
-    fontFamily: 'Inter-Regular',
+    fontFamily: 'Inter-Medium',
     fontSize: 15,
     fontStyle: 'normal',
-    fontWeight: 500,
   },
   'base-long': {
     fontFamily: 'Inter-Regular',
@@ -26,39 +25,48 @@ export const TYPOGRAPHY: Typography = {
     fontWeight: 500,
   },
   h6: {
-    fontFamily: 'Inter-Regular',
+    fontFamily: 'Inter-SemiBold',
     fontSize: 15,
     fontStyle: 'normal',
     fontWeight: 600,
   },
   h5: {
-    fontFamily: 'Inter-Regular',
+    fontFamily: 'Inter-SemiBold',
     fontSize: 18,
     fontStyle: 'normal',
     fontWeight: 600,
   },
   h4: {
-    fontFamily: 'Inter-Regular',
+    fontFamily: 'Inter-SemiBold',
     fontSize: 20,
     fontStyle: 'normal',
     fontWeight: 600,
   },
   h3: {
-    fontFamily: 'Inter-Regular',
+    fontFamily: 'Inter-SemiBold',
     fontSize: 24,
     fontStyle: 'normal',
     fontWeight: 600,
   },
   h2: {
-    fontFamily: 'Inter-Regular',
+    fontFamily: 'Inter-SemiBold',
     fontSize: 28,
     fontStyle: 'normal',
     fontWeight: 600,
   },
   h1: {
-    fontFamily: 'Inter-Regular',
+    fontFamily: 'Inter-SemiBold',
     fontSize: 32,
     fontStyle: 'normal',
     fontWeight: 600,
+  },
+  bold: {
+    fontFamily: 'Inter-Bold',
+  },
+  medium: {
+    fontFamily: 'Inter-Medium',
+  },
+  semibold: {
+    fontFamily: 'Inter-SemiBold',
   },
 };

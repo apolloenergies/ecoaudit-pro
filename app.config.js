@@ -12,9 +12,15 @@ export default ({ config }) => {
     icon: './assets/icon.png',
     userInterfaceStyle: 'light',
     newArchEnabled: true,
+    assetBundlePatterns: [
+      'assets/fonts/*'
+    ],
     ios: {
       supportsTablet: true,
-      bundleIdentifier: 'com.apolloenergies.ecoaudit'
+      bundleIdentifier: 'com.apolloenergies.ecoaudit',
+      infoPlist: {
+        "ITSAppUsesNonExemptEncryption": true
+      }
     },
     android: {
       adaptiveIcon: {

@@ -1,5 +1,5 @@
 import { StackScreenProps } from '@react-navigation/stack';
-import React, { useState } from 'react';
+import React from 'react';
 import { ScrollView, Text, View, Image } from 'react-native';
 
 import { Button } from 'components';
@@ -26,7 +26,7 @@ const SignupStep4 = ({ navigation }: SignupStep4ScreenProps) => {
           Your email has been successfully verified
         </Text>
         <View>
-          <Button title="Continue" onPress={() => navigation.popToTop()} />
+          <Button title="Continue" onPress={() => navigation.navigate('Onboarding')} />
         </View>
       </ScrollView>
     </AuthBackground>
