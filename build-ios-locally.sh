@@ -7,7 +7,7 @@ rm -f ./build-*.tar.gz
 rm -rf ./Payload
 
 echo "📦 Building for iOS simulator..."
-DOTENV_CONFIG_PATH=.env.production eas build --platform ios --profile development --local
+DOTENV_CONFIG_PATH=.env.production eas build --platform ios --profile development --local --clear-cache
 
 # Step 1: Find latest tarball
 TARBALL=$(ls -t build-*.tar.gz | head -n 1)
