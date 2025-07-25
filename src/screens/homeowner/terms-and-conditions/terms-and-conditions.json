@@ -1,0 +1,154 @@
+[
+  {
+    "type": "text",
+    "text": "PLEASE READ THIS AGREEMENT CAREFULLY BEFORE CLICKING \"I AGREE.\""
+  },
+  {
+    "type": "text",
+    "text": "WHEREAS, Homeowner wishes to conduct a virtual home energy audit to assess energy usage, identify inefficiencies, and receive recommended improvements."
+  },
+  {
+    "type": "text",
+    "text": "NOW, THEREFORE, in consideration of the mutual promises and covenants contained herein, the parties agree as follows:"
+  },
+  {
+    "type": "section",
+    "title": "1. Scope of Work",
+    "padding": true
+  },
+  {
+    "type": "text",
+    "text": "The Energy Auditor agrees to perform a comprehensive home energy audit, which may include, but is not limited to:",
+    "padding": true
+  },
+  {
+    "type": "bullets",
+    "bullets": [
+      "Assessment of the home's insulation and air sealing",
+      "Evaluation of heating and cooling systems",
+      "Inspection of windows and doors",
+      "Analysis of energy bills",
+      "Recommendations for energy-efficient improvements"
+    ]
+  },
+  {
+    "type": "section",
+    "title": "3. Services Provided"
+  },
+  {
+    "type": "text",
+    "text": "The Company provides a virtual energy audit service (\"Service\") designed to assess your energy usage and provide recommendations for improvement."
+  },
+  {
+    "type": "text",
+    "text": "Using building science best practices and 16 years of real-world experience managing energy efficiency upgrades. The Service will include collecting data related to your energy consumption, virtual consultations, and delivering an energy audit report."
+  },
+  {
+    "type": "text",
+    "text": "Optionally, you may hire COMPANY to manage the upgrades you choose to do to ensure you get the energy savings outlined in the audit report. You understand there is a separate fee for this service."
+  },
+  {
+    "type": "section",
+    "title": "4. Homeowner Responsibilities"
+  },
+  {
+    "type": "text",
+    "text": "The audit shall be conducted on the fully executed agreement. You agree to:"
+  },
+  {
+    "type": "bullets",
+    "bullets": [
+      "Provide accurate and complete information during the audit process.",
+      "Provide relevant pictures of specific aspects of your home.",
+      "Ensure you can share the information required for the audit. Use the Service only for lawful purposes and per this Agreement."
+    ]
+  },
+  {
+    "type": "section",
+    "title": "5. Payment Terms"
+  },
+  {
+    "type": "text",
+    "text": "The fee for the Service is $499. By clicking \"I Agree,\" you authorize the Company to pre-authorize your selected payment method for the agreed-upon fees. You’ll have 24 hours to reconsider and not be charged."
+  },
+  {
+    "type": "text",
+    "text": "After this time, if you cancel, the account will be charged $199 that is non-refundable, except as required by law."
+  },
+  {
+    "type": "section",
+    "title": "6. Data Privacy"
+  },
+  {
+    "type": "text",
+    "text": "The Company is committed to protecting your privacy. Any personal information collected during the virtual energy audit will be handled per our Privacy Policy, which is available on our website."
+  },
+  {
+    "type": "text",
+    "text": "By using the Service, you consent to collecting and using your information as described in the Privacy Policy."
+  },
+  {
+    "type": "section",
+    "title": "7. Confidentiality"
+  },
+  {
+    "type": "text",
+    "text": "“Confidential Information” includes all information disclosed by either party that is designated as confidential or should reasonably be understood to be confidential given its nature."
+  },
+  {
+    "type": "text",
+    "text": "Confidentiality obligations last two (2) years from the termination date of this Agreement."
+  },
+  {
+    "type": "section",
+    "title": "8. Intellectual Property"
+  },
+  {
+    "type": "text",
+    "text": "All content, trademarks, and intellectual property are owned by the Company or its licensors. You are granted a limited, non-exclusive, and non-transferable license for personal use only."
+  },
+  {
+    "type": "section",
+    "title": "9. Limitation of Liability"
+  },
+  {
+    "type": "text",
+    "text": "To the fullest extent permitted by law, the Company is not liable for any direct or indirect damages related to the use of the Service. The remedy for damages is limited to the amount paid to the Company."
+  },
+  {
+    "type": "section",
+    "title": "10. Termination"
+  },
+  {
+    "type": "text",
+    "text": "The Company may suspend or terminate your access to the Service at any time for any reason, including violation of this Agreement."
+  },
+  {
+    "type": "section",
+    "title": "11. Governing Law"
+  },
+  {
+    "type": "text",
+    "text": "This Agreement is governed by the laws of the State of California, without regard to its conflict of law principles."
+  },
+  {
+    "type": "section",
+    "title": "12. Changes to This Agreement"
+  },
+  {
+    "type": "text",
+    "text": "The Company may modify this Agreement at any time. Changes are effective immediately upon posting on the website or app. Continued use of the Service implies acceptance of the new terms."
+  },
+  {
+    "type": "section",
+    "title": "13. Contact Information"
+  },
+  {
+    "type": "text",
+    "text": "For questions, contact 888-614-8338 or info@apolloenergiesinc.com."
+  },
+  {
+    "type": "text",
+    "text": "This Agreement is the entire understanding between the parties and supersedes prior agreements. By clicking \"I Agree,\" you confirm that you understand and accept all terms."
+  }
+]
