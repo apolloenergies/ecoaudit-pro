@@ -10,3 +10,4 @@ export const authGradient2 = 'rgba(59,73,182,0.0)';
 export const authGradient3 = 'rgba(59,73,182,0.36)';
 export const homeGradient1 = 'rgba(59,73,182,0.00)';
 export const homeGradient2 = 'rgba(59,73,182,0.36)';
+export const nakedButton = '#181D25';

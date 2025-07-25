@@ -22,10 +22,14 @@ type DrawerProps = DrawerScreenProps<MainDrawerParamList, 'HomeOwner'>;
 
 type HomeScreenProps = CompositeScreenProps<StackProps, DrawerProps>;
 
-const HomeScreen = ({}: HomeScreenProps) => {
+const HomeScreen = ({ navigation }: HomeScreenProps) => {
   const styles = useThemedStyles(createHomeScreenStyles);
   const insets = useSafeAreaInsets();
   const [modalVisible, setModalVisible] = useState(false);
+  const onContinue = () => {
+    setModalVisible(false);
+    navigation.navigate('AuditSelection');
+  };
   return (
     <HomeBackground>
       <View style={styles.container}>
@@ -48,7 +52,7 @@ const HomeScreen = ({}: HomeScreenProps) => {
       </View>
       <PropertyTypeModal
         onClose={() => setModalVisible(false)}
-        onContinue={() => setModalVisible(false)}
+        onContinue={onContinue}
         visible={modalVisible}
       />
     </HomeBackground>

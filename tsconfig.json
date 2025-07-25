@@ -14,5 +14,7 @@
       "config": ["config/index.ts"],
       "theme": ["theme/index.ts"] 
     },
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
   }
 }
